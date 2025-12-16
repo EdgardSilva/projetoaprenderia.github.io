@@ -11,7 +11,7 @@ let agentData = {
             xp: 100, isProject: false,
             desc: `<p><strong>Objetivo:</strong> Descobrir onde a IA se esconde na sua casa.</p>
             <p>1. <strong>Briefing:</strong> Assista ao vídeo de instrução:<br>
-            <a href="https://www.youtube.com/watch?v=ayqfwRzAaUw" target="_blank">>> ACESSAR ARQUIVO: O que é IA? - Manual do Mundo</a></p>
+            <a href="https://www.youtube.com/watch?v=gq0apWV3YYY" target="_blank">>> ACESSAR ARQUIVO: IA no Manual do Mundo</a></p>
             <p>2. <strong>Desafio:</strong> Após assistir, liste oralmente para o Comando (Pai) 3 coisas/apps na sua casa que você acha que usam IA (Ex: YouTube, Google, Jogos, Celular).</p>`,
             completed: false
         },
@@ -20,7 +20,7 @@ let agentData = {
             id: 2, phase: 1, title: "IA no Campo de Batalha Diário",
             xp: 100, isProject: false,
             desc: `<p><strong>Objetivo:</strong> Investigar como a IA funciona no seu dia a dia.</p>
-            <p>1. <strong>Briefing:</strong> <a href="https://www.youtube.com/watch?v=AM-LAvT0coU" target="_blank">>> VÍDEO: IA no nosso dia a dia - Me Ensina</a></p>
+            <p>1. <strong>Briefing:</strong> <a href="https://www.youtube.com/watch?v=xfVUmd545KU" target="_blank">>> VÍDEO: 5 usos de IA no dia a dia (Manual do Mundo)</a></p>
             <p>2. <strong>Ação:</strong> Peça para ele apontar na casa: "Onde você acha que aqui tem IA?"</p>
             <p>3. <strong>Bônus (50 XP):</strong> Se conseguir explicar para o Comando (Pai) com as suas próprias palavras: "O que é IA?".</p>`,
             completed: false
@@ -30,7 +30,7 @@ let agentData = {
             id: 3, phase: 1, title: "Missão Sexta: Cartaz do Detetive",
             xp: 300, isProject: true,
             desc: `<p><strong>Objetivo:</strong> Mapear e apresentar as IAs que você usa.</p>
-            <p>1. <strong>Briefing:</strong> <a href="https://www.youtube.com/watch?v=49KQId5X1Lw" target="_blank">>> VÍDEO: Como o YouTube sabe o que você quer?</a></p>
+            <p>1. <strong>Briefing:</strong> <a href="https://support.google.com/youtube/answer/6342839?hl=pt-BR" target="_blank">>> LEITURA: Como o YouTube recomenda vídeos (Google)</a></p>
             <p>2. <strong>Desafio Final da Fase 1:</strong> Fazer um cartaz (papel ou digital) com:</p>
             <ul class="cyber-list">
                 <li>Título: "Onde a IA aparece na minha vida"</li>
@@ -46,7 +46,7 @@ let agentData = {
             id: 4, phase: 2, title: "O Cérebro do NPC",
             xp: 100, isProject: false,
             desc: `<p><strong>Objetivo:</strong> Entender como os inimigos (NPCs) dos jogos funcionam.</p>
-            <p>1. <strong>Briefing:</strong> <a href="https://www.youtube.com/watch?v=13xL8-V4fco" target="_blank">>> VÍDEO: IA EM JOGOS</a></p>
+            <p>1. <strong>Briefing:</strong> <a href="https://www.globant.com/pt-br/tech-terms/ia-nos-jogos" target="_blank">>> LEITURA: IA em jogos (explicação simples)</a></p>
             <p>2. <strong>Desafio:</strong> Pense em um jogo que você joga. Que tipo de coisa parece 'inteligente' (inimigo, aliado)? Conte ao Comando qual inimigo age de forma "esperta".</p>
             <p>3. <strong>Bônus (50 XP):</strong> Se fosse criar um inimigo, como ele agiria? (Pensar em 3 regras de comportamento).</p>`,
             completed: false
@@ -57,7 +57,7 @@ let agentData = {
             xp: 100, isProject: false,
             desc: `<p><strong>Objetivo:</strong> Fazer o personagem se mover com as setas.</p>
             <p>1. <strong>Acesso:</strong> Entre em <a href="https://scratch.mit.edu" target="_blank">scratch.mit.edu</a> e crie uma conta (se não tiver).</p>
-            <p>2. <strong>Tutorial:</strong> <a href="https://www.youtube.com/watch?v=b0GqgNIFj2o" target="_blank">>> VÍDEO: Tutorial Scratch para Iniciantes</a></p>
+            <p>2. <strong>Tutorial:</strong> <a href="https://www.alura.com.br/artigos/movendo-um-personagem-no-scratch" target="_blank">>> LEITURA/TUTORIAL: Movimentar personagem no Scratch</a></p>
             <p>3. <strong>Desafio:</strong> Faça o personagem principal (Sprite) se mexer quando você aperta as setas do teclado.</p>`,
             completed: false
         },
@@ -66,7 +66,7 @@ let agentData = {
             id: 6, phase: 2, title: "Missão Sexta: O Coletor de Moedas",
             xp: 300, isProject: true,
             desc: `<p><strong>Objetivo:</strong> Criar seu primeiro mini-jogo funcional.</p>
-            <p>1. <strong>Referência:</strong> <a href="https://www.youtube.com/watch?v=9o2dK2K1Lqg" target="_blank">>> TUTORIAL: Criando um jogo simples no Scratch</a></p>
+            <p>1. <strong>Referência:</strong> <a href="https://www.youtube.com/watch?v=9eRU_j6VWHY" target="_blank">>> TUTORIAL: Criando um jogo simples no Scratch</a></p>
             <p>2. <strong>Missão:</strong> Crie um jogo onde o personagem tem que pegar um objeto (moeda ou outro sprite) para ganhar pontos.</p>
             <p>3. <strong>Vitória:</strong> Mostrar o jogo funcionando (com pontuação) para o Comando.</p>`,
             completed: false
@@ -78,7 +78,7 @@ let agentData = {
             id: 7, phase: 3, title: "O Professor de Robôs",
             xp: 100, isProject: false,
             desc: `<p><strong>Objetivo:</strong> Entender que a IA aprende vendo exemplos.</p>
-            <p>1. <strong>Briefing:</strong> <a href="https://www.youtube.com/watch?v=z4m1fyjy_is" target="_blank">>> VÍDEO: Como ensinar uma máquina a reconhecer imagens</a></p>
+            <p>1. <strong>Briefing:</strong> <a href="https://www.alura.com.br/videos/visao-computacional-com-teachable-machine-c1466" target="_blank">>> AULA: Visão computacional com Teachable Machine</a></p>
             <p>2. <strong>Conceito:</strong> Se você mostrar 100 fotos de cachorro, você aprende o que é um cachorro. A IA é igual. Conte ao Comando como você acha que isso funciona.</p>`,
             completed: false
         },
@@ -88,7 +88,7 @@ let agentData = {
             xp: 100, isProject: false,
             desc: `<p><strong>Objetivo:</strong> Usar o Teachable Machine do Google.</p>
             <p>1. <strong>Ferramenta:</strong> Vá em <a href="https://teachablemachine.withgoogle.com/" target="_blank">Teachable Machine</a> -> "Image Project".</p>
-            <p>2. <strong>Tutorial:</strong> <a href="https://www.youtube.com/watch?v=5VjI7Zx6BRk" target="_blank">>> PASSO A PASSO TEACHABLE MACHINE</a></p>
+            <p>2. <strong>Tutorial:</strong> <a href="https://codelabs.developers.google.com/tensorflowjs-transfer-learning-teachable-machine?hl=pt-br" target="_blank">>> GUIA: Teachable Machine passo a passo</a></p>
             <p>3. <strong>Desafio:</strong> Crie um modelo que reconhece 2 classes simples (Ex: "Mão aberta" vs "Mão fechada") usando a webcam.</p>`,
             completed: false
         },
@@ -117,7 +117,7 @@ let agentData = {
             id: 11, phase: 4, title: "Profissões do Futuro",
             xp: 100, isProject: false,
             desc: `<p><strong>Objetivo:</strong> Imaginar onde a IA pode te levar.</p>
-            <p>1. <strong>Briefing:</strong> <a href="https://www.youtube.com/watch?v=vmpRL06gFjg" target="_blank">>> NERDOLOGIA: PROFISSÕES DO FUTURO</a></p>
+            <p>1. <strong>Briefing:</strong> <a href="https://www.youtube.com/watch?v=qVGxWi6XDAI" target="_blank">>> NERDOLOGIA: PROFISSÕES DO FUTURO</a></p>
             <p>2. <strong>Chat:</strong> Discutir com o Comando: o que parece mais legal? Criar jogos? Desenhar robôs? (Sem pressão para escolher).</p>
             <p>3. <strong>Bônus (50 XP):</strong> Revisitar o jogo do Scratch e fazer uma melhoria que use uma regra de 'Se/Então'.</p>`,
             completed: false
@@ -459,17 +459,6 @@ function showSection(sectionId) {
         renderAgendaBox();
     }
 }
-
-function resetProtocol() {
-  openConfirm(
-    "<strong>TEM CERTEZA, AGENTE?</strong><br><br>Isso apagará todo o seu progresso.<br><strong>Ação irreversível.</strong>",
-    () => {
-      localStorage.removeItem("agentMiguelPlan_Final");
-      location.reload();
-    }
-  );
-}
-
 
 // Inicializar (garante que o DOM existe antes de renderizar)
 document.addEventListener('DOMContentLoaded', init);
