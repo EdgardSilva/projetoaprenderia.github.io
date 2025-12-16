@@ -12,7 +12,7 @@ let agentData = {
             xp: 100, isProject: false,
             desc: `<p><strong>Objetivo:</strong> Descobrir onde a IA se esconde na sua casa.</p>
             <p>1. <strong>Briefing:</strong> Assista ao vídeo de instrução:<br>
-            <a href="https://www.youtube.com/watch?v=ayqfwRzAaUw" target="_blank">>> ACESSAR ARQUIVO: O que é IA? - Manual do Mundo</a></p>
+            <a href="https://www.youtube.com/watch?v=gq0apWV3YYY" target="_blank">>> ACESSAR ARQUIVO: IA no Manual do Mundo</a></p>
             <p>2. <strong>Desafio:</strong> Após assistir, liste oralmente para o Comando (Pai) 3 coisas/apps na sua casa que você acha que usam IA (Ex: YouTube, Google, Jogos, Celular).</p>`,
             completed: false
         },
@@ -21,7 +21,7 @@ let agentData = {
             id: 2, phase: 1, title: "IA no Campo de Batalha Diário",
             xp: 100, isProject: false,
             desc: `<p><strong>Objetivo:</strong> Investigar como a IA funciona no seu dia a dia.</p>
-            <p>1. <strong>Briefing:</strong> <a href="https://www.youtube.com/watch?v=AM-LAvT0coU" target="_blank">>> VÍDEO: IA no nosso dia a dia - Me Ensina</a></p>
+            <p>1. <strong>Briefing:</strong> <a href="https://www.youtube.com/watch?v=xfVUmd545KU" target="_blank">>> VÍDEO: 5 usos de IA no dia a dia (Manual do Mundo)</a></p>
             <p>2. <strong>Ação:</strong> Peça para ele apontar na casa: "Onde você acha que aqui tem IA?"</p>
             <p>3. <strong>Bônus (50 XP):</strong> Se conseguir explicar para o Comando (Pai) com as suas próprias palavras: "O que é IA?".</p>`,
             completed: false
@@ -31,7 +31,7 @@ let agentData = {
             id: 3, phase: 1, title: "Missão Sexta: Cartaz do Detetive",
             xp: 300, isProject: true,
             desc: `<p><strong>Objetivo:</strong> Mapear e apresentar as IAs que você usa.</p>
-            <p>1. <strong>Briefing:</strong> <a href="https://www.youtube.com/watch?v=49KQId5X1Lw" target="_blank">>> VÍDEO: Como o YouTube sabe o que você quer?</a></p>
+            <p>1. <strong>Briefing:</strong> <a href="https://support.google.com/youtube/answer/6342839?hl=pt-BR" target="_blank">>> LEITURA: Como o YouTube recomenda vídeos (Google)</a></p>
             <p>2. <strong>Desafio Final da Fase 1:</strong> Fazer um cartaz (papel ou digital) com:</p>
             <ul class="cyber-list">
                 <li>Título: "Onde a IA aparece na minha vida"</li>
@@ -47,7 +47,7 @@ let agentData = {
             id: 4, phase: 2, title: "O Cérebro do NPC",
             xp: 100, isProject: false,
             desc: `<p><strong>Objetivo:</strong> Entender como os inimigos (NPCs) dos jogos funcionam.</p>
-            <p>1. <strong>Briefing:</strong> <a href="https://www.youtube.com/watch?v=13xL8-V4fco" target="_blank">>> VÍDEO: IA EM JOGOS</a></p>
+            <p>1. <strong>Briefing:</strong> <a href="https://www.globant.com/pt-br/tech-terms/ia-nos-jogos" target="_blank">>> LEITURA: IA em jogos (explicação simples)</a></p>
             <p>2. <strong>Desafio:</strong> Pense em um jogo que você joga. Que tipo de coisa parece 'inteligente' (inimigo, aliado)? Conte ao Comando qual inimigo age de forma "esperta".</p>
             <p>3. <strong>Bônus (50 XP):</strong> Se fosse criar um inimigo, como ele agiria? (Pensar em 3 regras de comportamento).</p>`,
             completed: false
@@ -58,7 +58,7 @@ let agentData = {
             xp: 100, isProject: false,
             desc: `<p><strong>Objetivo:</strong> Fazer o personagem se mover com as setas.</p>
             <p>1. <strong>Acesso:</strong> Entre em <a href="https://scratch.mit.edu" target="_blank">scratch.mit.edu</a> e crie uma conta (se não tiver).</p>
-            <p>2. <strong>Tutorial:</strong> <a href="https://www.youtube.com/watch?v=b0GqgNIFj2o" target="_blank">>> VÍDEO: Tutorial Scratch para Iniciantes</a></p>
+            <p>2. <strong>Tutorial:</strong> <a href="https://www.alura.com.br/artigos/movendo-um-personagem-no-scratch" target="_blank">>> LEITURA/TUTORIAL: Movimentar personagem no Scratch</a></p>
             <p>3. <strong>Desafio:</strong> Faça o personagem principal (Sprite) se mexer quando você aperta as setas do teclado.</p>`,
             completed: false
         },
@@ -67,7 +67,7 @@ let agentData = {
             id: 6, phase: 2, title: "Missão Sexta: O Coletor de Moedas",
             xp: 300, isProject: true,
             desc: `<p><strong>Objetivo:</strong> Criar seu primeiro mini-jogo funcional.</p>
-            <p>1. <strong>Referência:</strong> <a href="https://www.youtube.com/watch?v=9o2dK2K1Lqg" target="_blank">>> TUTORIAL: Criando um jogo simples no Scratch</a></p>
+            <p>1. <strong>Referência:</strong> <a href="https://www.youtube.com/watch?v=9eRU_j6VWHY" target="_blank">>> TUTORIAL: Criando um jogo simples no Scratch</a></p>
             <p>2. <strong>Missão:</strong> Crie um jogo onde o personagem tem que pegar um objeto (moeda ou outro sprite) para ganhar pontos.</p>
             <p>3. <strong>Vitória:</strong> Mostrar o jogo funcionando (com pontuação) para o Comando.</p>`,
             completed: false
@@ -79,7 +79,7 @@ let agentData = {
             id: 7, phase: 3, title: "O Professor de Robôs",
             xp: 100, isProject: false,
             desc: `<p><strong>Objetivo:</strong> Entender que a IA aprende vendo exemplos.</p>
-            <p>1. <strong>Briefing:</strong> <a href="https://www.youtube.com/watch?v=z4m1fyjy_is" target="_blank">>> VÍDEO: Como ensinar uma máquina a reconhecer imagens</a></p>
+            <p>1. <strong>Briefing:</strong> <a href="https://www.alura.com.br/videos/visao-computacional-com-teachable-machine-c1466" target="_blank">>> AULA: Visão computacional com Teachable Machine</a></p>
             <p>2. <strong>Conceito:</strong> Se você mostrar 100 fotos de cachorro, você aprende o que é um cachorro. A IA é igual. Conte ao Comando como você acha que isso funciona.</p>`,
             completed: false
         },
@@ -89,7 +89,7 @@ let agentData = {
             xp: 100, isProject: false,
             desc: `<p><strong>Objetivo:</strong> Usar o Teachable Machine do Google.</p>
             <p>1. <strong>Ferramenta:</strong> Vá em <a href="https://teachablemachine.withgoogle.com/" target="_blank">Teachable Machine</a> -> "Image Project".</p>
-            <p>2. <strong>Tutorial:</strong> <a href="https://www.youtube.com/watch?v=5VjI7Zx6BRk" target="_blank">>> PASSO A PASSO TEACHABLE MACHINE</a></p>
+            <p>2. <strong>Tutorial:</strong> <a href="https://codelabs.developers.google.com/tensorflowjs-transfer-learning-teachable-machine?hl=pt-br" target="_blank">>> GUIA: Teachable Machine passo a passo</a></p>
             <p>3. <strong>Desafio:</strong> Crie um modelo que reconhece 2 classes simples (Ex: "Mão aberta" vs "Mão fechada") usando a webcam.</p>`,
             completed: false
         },
@@ -118,7 +118,7 @@ let agentData = {
             id: 11, phase: 4, title: "Profissões do Futuro",
             xp: 100, isProject: false,
             desc: `<p><strong>Objetivo:</strong> Imaginar onde a IA pode te levar.</p>
-            <p>1. <strong>Briefing:</strong> <a href="https://www.youtube.com/watch?v=vmpRL06gFjg" target="_blank">>> NERDOLOGIA: PROFISSÕES DO FUTURO</a></p>
+            <p>1. <strong>Briefing:</strong> <a href="https://www.youtube.com/watch?v=qVGxWi6XDAI" target="_blank">>> NERDOLOGIA: PROFISSÕES DO FUTURO</a></p>
             <p>2. <strong>Chat:</strong> Discutir com o Comando: o que parece mais legal? Criar jogos? Desenhar robôs? (Sem pressão para escolher).</p>
             <p>3. <strong>Bônus (50 XP):</strong> Revisitar o jogo do Scratch e fazer uma melhoria que use uma regra de 'Se/Então'.</p>`,
             completed: false
@@ -141,11 +141,107 @@ let agentData = {
 // Total de XP esperado para a barra. Max XP é a soma de todos os XP base/projeto.
 const TOTAL_MAX_XP = agentData.missions.reduce((sum, m) => sum + m.xp, 0) + 500; // 500 XP da apresentação final.
 
+
+// ===============================
+// AGENDA INTELIGENTE (Missão do Dia)
+// ===============================
+const SCHEDULE = {
+    english: { day: 3, label: "📘 Inglês (tarde)" }, // 3 = quarta (0 dom, 1 seg, 2 ter, 3 qua...)
+    gymDays: [2, 4], // 2 = terça, 4 = quinta
+    gym: { label: "🏋️ Academia (19:00–21:00)" }
+};
+
+const PT_DAYS = ["Domingo","Segunda","Terça","Quarta","Quinta","Sexta","Sábado"];
+
+function getTodayInfo() {
+    const now = new Date();
+    const day = now.getDay();
+    return { now, day, dayName: PT_DAYS[day] };
+}
+
+function getCurrentUnlockedPhase() {
+    for (let p = 1; p <= 4; p++) {
+        if (p > 1) {
+            const prev = agentData.missions.filter(m => m.phase === p - 1);
+            const prevComplete = prev.every(m => m.completed);
+            if (!prevComplete) return p - 1;
+        }
+        const phaseMissions = agentData.missions.filter(m => m.phase === p);
+        if (phaseMissions.some(m => !m.completed)) return p;
+    }
+    return 4;
+}
+
+function pickRecommendedMission(day) {
+    const phase = getCurrentUnlockedPhase();
+    const phaseMissions = agentData.missions.filter(m => m.phase === phase && !m.completed);
+    if (phaseMissions.length === 0) return null;
+
+    const isFriday = day === 5;
+    const isGymDay = SCHEDULE.gymDays.includes(day);
+
+    if (isFriday) return phaseMissions.find(m => m.xp > 150) || phaseMissions[0];
+    if (isGymDay) return phaseMissions.find(m => m.xp <= 150) || phaseMissions[0];
+    return phaseMissions[0];
+}
+
+function buildAgendaText() {
+    const { day, dayName } = getTodayInfo();
+
+    const events = [];
+    if (day === SCHEDULE.english.day) events.push(SCHEDULE.english.label);
+    if (SCHEDULE.gymDays.includes(day)) events.push(SCHEDULE.gym.label);
+    if (events.length === 0) events.push("🧩 Dia livre (escolha leve)");
+
+    const mission = pickRecommendedMission(day);
+    return {
+        title: `HOJE: ${dayName.toUpperCase()}`,
+        eventsText: events.join(" • "),
+        missionTitle: mission ? mission.title : "Tudo completo ✅",
+        missionId: mission ? mission.id : null
+    };
+}
+
+function renderAgendaBox() {
+    const dashboardHead = document.querySelector(".dashboard-head");
+    if (!dashboardHead) return;
+
+    let box = document.getElementById("agendaBox");
+    if (!box) {
+        box = document.createElement("div");
+        box.className = "stats-box";
+        box.id = "agendaBox";
+        dashboardHead.appendChild(box);
+    }
+
+    const agenda = buildAgendaText();
+    box.innerHTML = `
+        <span class="label">${agenda.title}</span>
+        <span class="value" style="font-size: 1.05rem; line-height: 1.2; margin-top: 6px;">
+            ${agenda.eventsText}
+        </span>
+        <span class="label" style="margin-top: 10px;">MISSÃO RECOMENDADA</span>
+        <span class="value" style="font-size: 1.1rem;">
+            ${agenda.missionTitle}
+        </span>
+    `;
+
+    if (agenda.missionId) {
+        box.style.cursor = "pointer";
+        box.onclick = () => openMissionModal(agenda.missionId);
+    } else {
+        box.style.cursor = "default";
+        box.onclick = null;
+    }
+}
+
+
 function init() {
     loadData();
+    initAvatar();
     renderSidebar();
     renderMissions();
-    if (typeof initAvatar === 'function') initAvatar();
+    renderAgendaBox();
 }
 
 // 1. Controle de Dados e Salvamento
@@ -154,9 +250,12 @@ function loadData() {
     if (saved) {
         const parsed = JSON.parse(saved);
         agentData.name = parsed.name;
-        agentData.avatar = parsed.avatar || null;
         agentData.level = parsed.level;
         agentData.xp = parsed.xp;
+        // Recuperar avatar (se existir)
+        if (parsed.avatar) {
+            agentData.avatar = parsed.avatar;
+        }
         // Recuperar status das missões
         parsed.missions.forEach(pm => {
             const mission = agentData.missions.find(m => m.id === pm.id);
@@ -175,17 +274,69 @@ function saveData() {
     localStorage.setItem('agentMiguelPlan_Final', JSON.stringify(agentData));
 }
 
+
+// ===============================
+// AVATAR DO AGENTE (UPLOAD + SAVE)
+// ===============================
+function initAvatar() {
+    const avatarInput = document.getElementById("avatarInput");
+    const avatarImg = document.getElementById("agentAvatar");
+    if (!avatarInput || !avatarImg) return;
+
+    // Se já existe avatar salvo, aplicar
+    if (agentData.avatar) {
+        avatarImg.src = agentData.avatar;
+    }
+
+    // Evita adicionar listener duplicado se init rodar novamente por algum motivo
+    if (avatarInput.dataset.bound === "1") return;
+    avatarInput.dataset.bound = "1";
+
+    avatarInput.addEventListener("change", function () {
+        const file = this.files && this.files[0];
+        if (!file) return;
+
+        // Blindagem básica: só imagem
+        if (!file.type || !file.type.startsWith("image/")) {
+            openToast("Arquivo inválido. Selecione uma imagem.", "AVATAR");
+            this.value = "";
+            return;
+        }
+
+        // Blindagem: evita imagens gigantes (base64 explode no localStorage)
+        const MAX_BYTES = 1_500_000; // ~1.5MB
+        if (file.size > MAX_BYTES) {
+            openToast("Imagem muito grande. Escolha uma menor (até ~1,5MB).", "AVATAR");
+            this.value = "";
+            return;
+        }
+
+        const reader = new FileReader();
+        reader.onload = function (e) {
+            const base64Image = e.target.result;
+            avatarImg.src = base64Image;
+            agentData.avatar = base64Image;
+            saveData();
+            openToast("Avatar atualizado com sucesso ✅", "AVATAR");
+        };
+        reader.readAsDataURL(file);
+    });
+}
+
 function startSystem() {
-    const nameInput = document.getElementById('agentNameInput').value;
-    if(nameInput) agentData.name = nameInput;
+    const nameInput = document.getElementById('agentNameInput').value.trim();
+    if (!nameInput) {
+        openToast('Digite seu codinome para iniciar o protocolo.', 'ACESSO RESTRITO');
+        return;
+    }
+    agentData.name = nameInput;
     saveData();
-    renderSidebar();
     showSection('dashboardSection');
 }
 
 // 2. Renderização da Interface
 function renderSidebar() {
-    document.getElementById('displayAgentName').innerText = "AGENTE " + agentData.name.toUpperCase();
+    document.getElementById('displayAgentName').innerText = "AGENTE " + ((agentData.name || '').toUpperCase());
     document.getElementById('agentLevel').innerText = agentData.level;
     document.getElementById('currentXP').innerText = agentData.xp;
     document.getElementById('maxXP').innerText = TOTAL_MAX_XP; // Total de XP para a barra
@@ -205,10 +356,7 @@ function renderSidebar() {
     document.getElementById('totalReward').innerText = (completed * 10).toFixed(2).replace('.', ',');
     
     document.getElementById('progressText').innerText = Math.round((completed/total)*100) + "%";
-
-    if (typeof renderAvatar === 'function') renderAvatar();
 }
-
 
 function renderMissions() {
     const container = document.getElementById('missionsList');
@@ -328,9 +476,19 @@ function completeMission() {
         renderMissions();
         closeModal();
         
+        
+        renderAgendaBox();
+
+        // Checagem: semana concluída?
+        const phaseMissions = agentData.missions.filter(mm => mm.phase === mission.phase);
+        const phaseCompleteNow = phaseMissions.every(mm => mm.completed);
+        if (phaseCompleteNow) {
+            openToast(`<strong>SEMANA ${mission.phase} CONCLUÍDA!</strong><br>Próxima semana liberada ✅`, "PROGRESSO");
+        }
+
         // Efeito sonoro mental de "Mission Complete"
-        alert(`MISSÃO CUMPRIDA! +${mission.xp} XP e R$ 10,00 adicionados. (Se for a missão final, o bônus de R$ 40,00 será verificado pelo Comando!)`);
-    }
+        openToast(`<strong>MISSÃO CUMPRIDA!</strong><br>+${mission.xp} XP e <strong>R$ 10,00</strong> adicionados.${mission.id === 12 ? "<br><br><strong>BÔNUS FINAL:</strong> +500 XP aplicado ✅" : ""}`, "PROTOCOLO");
+}
 }
 
 // 4. Navegação e Reset
@@ -348,81 +506,88 @@ function showSection(sectionId) {
     // Atualiza botões do menu
     document.querySelectorAll('.nav-btn').forEach(btn => btn.classList.remove('active'));
     document.querySelector(`.nav-btn[onclick*="${sectionId}"]`).classList.add('active');
+
+    // ✅ BLINDAGEM: sempre que abrir o dashboard, re-renderiza tudo
+    if (sectionId === "dashboardSection") {
+        renderSidebar();
+        renderMissions();
+        renderAgendaBox();
+    }
 }
 
+// Inicializar (garante que o DOM existe antes de renderizar)
+document.addEventListener('DOMContentLoaded', init);
+// ===============================
+// MODAL DE AVISO (substitui alert)
+// ===============================
+function openToast(messageHtml, title = "SISTEMA") {
+  const titleEl = document.getElementById("toastTitle");
+  const msgEl = document.getElementById("toastMessage");
+  const modal = document.getElementById("toastModal");
+  if (!titleEl || !msgEl || !modal) {
+    // fallback de segurança (não deveria acontecer)
+    console.log(title + ": " + messageHtml);
+    return;
+  }
+  titleEl.innerText = title;
+  msgEl.innerHTML = messageHtml;
+  modal.style.display = "flex";
+}
+
+function closeToast() {
+  const modal = document.getElementById("toastModal");
+  if (modal) modal.style.display = "none";
+}
+
+// ===============================
+// RESET DO SISTEMA (GARANTIDO)
+// ===============================
 function resetProtocol() {
-    if (confirm("TEM CERTEZA AGENTE? ISSO APAGARÁ TODO O SEU PROGRESSO. Ação irreversível.")) {
-        localStorage.removeItem('agentMiguelPlan_Final');
-        location.reload();
+  if (typeof openConfirm !== "function") {
+    // fallback extremo (só se algo estiver muito errado)
+    localStorage.removeItem("agentMiguelPlan_Final");
+    location.reload();
+    return;
+  }
+
+  openConfirm(
+    "<strong>TEM CERTEZA, AGENTE?</strong><br><br>" +
+    "Isso apagará todo o seu progresso.<br>" +
+    "<strong>Ação irreversível.</strong>",
+    () => {
+      localStorage.removeItem("agentMiguelPlan_Final");
+      location.reload();
     }
+  );
+}
+// ===============================
+// MODAL DE CONFIRMAÇÃO (openConfirm) - NECESSÁRIO PRO RESET
+// ===============================
+let confirmCallback = null;
+
+function openConfirm(messageHtml, onConfirm) {
+  confirmCallback = onConfirm;
+  const msg = document.getElementById("confirmMessage");
+  const modal = document.getElementById("confirmModal");
+
+  if (!msg || !modal) {
+    // fallback seguro (não usa popup do navegador)
+    localStorage.removeItem("agentMiguelPlan_Final");
+    location.reload();
+    return;
+  }
+
+  msg.innerHTML = messageHtml;
+  modal.style.display = "flex";
 }
 
-// Inicializar
-init();
-
-// ===============================
-// AVATAR DO AGENTE (UPLOAD + SAVE)
-// ===============================
-function initAvatar() {
-    const avatarEl = document.getElementById("agentAvatar");
-    const inputEl = document.getElementById("avatarInput");
-    if (!avatarEl || !inputEl) return;
-
-    // Clique no avatar (imagem) abre o seletor
-    avatarEl.addEventListener("click", () => inputEl.click());
-
-    inputEl.addEventListener("change", (e) => {
-        const file = e.target.files && e.target.files[0];
-        if (!file) return;
-
-        if (!file.type || !file.type.startsWith("image/")) {
-            if (typeof openToast === "function") openToast("Arquivo inválido. Escolha uma imagem.", "SISTEMA");
-            return;
-        }
-
-        const reader = new FileReader();
-        reader.onload = () => {
-            agentData.avatar = reader.result; // base64
-            saveData();
-            renderAvatar();
-            if (typeof openToast === "function") openToast("Avatar atualizado ✅", "PROTOCOLO");
-        };
-        reader.readAsDataURL(file);
-
-        // permite escolher a mesma imagem novamente
-        inputEl.value = "";
-    });
-
-    renderAvatar();
+function closeConfirm() {
+  const modal = document.getElementById("confirmModal");
+  if (modal) modal.style.display = "none";
+  confirmCallback = null;
 }
 
-function renderAvatar() {
-    const avatarImg = document.getElementById("agentAvatar");
-    if (!avatarImg) return;
-
-    const isImg = avatarImg.tagName && avatarImg.tagName.toLowerCase() === "img";
-
-    if (agentData.avatar) {
-        if (isImg) {
-            avatarImg.src = agentData.avatar;
-        } else {
-            avatarImg.style.backgroundImage = `url('${agentData.avatar}')`;
-            avatarImg.style.backgroundSize = "cover";
-            avatarImg.style.backgroundPosition = "center";
-            avatarImg.textContent = "";
-        }
-        return;
-    }
-
-    // sem foto: mantém o src atual se for IMG
-    if (!isImg) {
-        const initials = (agentData.name || "AM")
-            .trim()
-            .split(/\s+/)
-            .slice(0, 2)
-            .map(w => (w[0] ? w[0].toUpperCase() : ""))
-            .join("") || "AM";
-        avatarImg.style.backgroundImage = "none";
-        avatarImg.textContent = initials;
-    }
+function confirmYes() {
+  if (typeof confirmCallback === "function") confirmCallback();
+  closeConfirm();
 }
