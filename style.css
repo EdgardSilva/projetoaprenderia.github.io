@@ -190,13 +190,17 @@ body {
 ::-webkit-scrollbar-thumb { background: #333; border-radius: 4px; }
 ::-webkit-scrollbar-thumb:hover { background: var(--neon-green); }
 
-/* Botão de perigo (usado no modal de confirmação) */
-.cyber-btn.danger {
-    background: #ff4757;
-    color: white;
-}
-.cyber-btn.danger:hover { box-shadow: 0 0 15px rgba(255, 71, 87, 0.6); }
 
-/* Modal de aviso (toast em tela cheia) – mais compacto */
-#toastModal .cyber-modal { width: 520px; max-width: 92%; }
-#toastModal .modal-footer { text-align: right; }
+/* Links dentro do modal (mantém tudo clicável e com cara do sistema) */
+.modal-body a {
+  color: var(--neon-green);
+  text-decoration: underline;
+}
+.modal-body a:hover {
+  color: var(--neon-blue);
+}
+
+/* Avatar clicável */
+.avatar-frame, #agentAvatar {
+  cursor: pointer;
+}
