@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protocolo MESTRE IA | Agente Miguel</title>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-interface">
+        
+        <aside class="sidebar">
+            <div class="profile-section">
+                <div class="avatar-frame" onclick="document.getElementById('avatarInput').click()">
+                    <img id="agentAvatar" src="https://ui-avatars.com/api/?name=Agente+M&background=0f3460&color=00ff9d&size=128" alt="Agente">
+                    <div class="scan-line"></div>
+                    <input type="file" id="avatarInput" accept="image/*" style="display: none;">
+                </div>
+                <h2 id="displayAgentName">AGENTE MIGUEL</h2>
+                <div class="level-badge">NÍVEL <span id="agentLevel">1</span></div>
+            </div>
+
+            <nav class="nav-menu">
+                <button class="nav-btn active" onclick="showSection('dashboardSection')">🖥️ CENTRAL DE COMANDO</button>
+                <button class="nav-btn" onclick="showSection('rulesSection')">📂 ARQUIVO SECRETO</button>
+                <button class="nav-btn danger" onclick="resetProtocol()">⚠️ REINICIAR SISTEMA</button>
+            </nav>
+
+            <div class="xp-container">
+                <p>XP DO SISTEMA</p>
+                <div class="xp-bar-bg"><div id="xpProgressBar" class="xp-bar-fill"></div></div>
+                <p class="xp-text"><span id="currentXP">0</span> / <span id="maxXP">400</span> XP</p>
+            </div>
+        </aside>
+
+        <main class="content-area">
+            
+            <section id="welcomeSection" class="panel hidden-section">
+                <h1 class="glitch-text" data-text="ACESSO RESTRITO">ACESSO RESTRITO</h1>
+                <p class="terminal-text">IDENTIFIQUE-SE PARA INICIAR O PROTOCOLO "MESTRE IA".</p>
+                <div class="input-console">
+                    <span>></span>
+                    <input type="text" id="agentNameInput" placeholder="Digite seu Codinome...">
+                </div>
+                <button class="cyber-btn" onclick="startSystem()">INICIALIZAR SISTEMA</button>
+            </section>
+
+            <section id="dashboardSection" class="panel active-section">
+                <header class="dashboard-head">
+                    <div class="stats-box">
+                        <span class="label">MISSÕES CUMPRIDAS</span>
+                        <span class="value"><span id="missionsCompleted">0</span>/<span id="totalMissions">12</span></span>
+                    </div>
+                    <div class="stats-box">
+                        <span class="label">CRÉDITOS ACUMULADOS</span>
+                        <span class="value money">R$ <span id="totalReward">0,00</span></span>
+                    </div>
+                    <div class="stats-box">
+                        <span class="label">STATUS GERAL</span>
+                        <span class="value" id="progressText">0%</span>
+                    </div>
+                </header>
+
+                <div class="missions-container" id="missionsList">
+                    </div>
+            </section>
+
+            <section id="rulesSection" class="panel hidden-section">
+                <h2>// ARQUIVO: MANUAL_DO_AGENTE.txt</h2>
+                <div class="rules-content terminal-text">
+                    <p>> [01] O OBJETIVO</p>
+                    <p>Este protocolo foi desenhado para dominar a Inteligência Artificial em 4 semanas.</p>
+                    <br>
+                    <p>> [02] REGRAS DE ENGAJAMENTO</p>
+                    <ul class="cyber-list">
+                        <li><strong>Briefing (Vídeo):</strong> É a inteligência. Assista para entender.</li>
+                        <li><strong>Missão (Prática):</strong> É a ação. Execute para ganhar XP.</li>
+                        <li><strong>Comando (Pai):</strong> Você deve reportar o sucesso da missão ao Comando para validar.</li>
+                        <li><strong>Bloqueio:</strong> A Semana 2 só desbloqueia quando a Semana 1 estiver 100% completa.</li>
+                        <li><strong>Recompensa:</strong> Cada missão concluída vale <strong>R$ 10,00</strong> em créditos.</li>
+                    </ul>
+                </div>
+                <button class="cyber-btn small" onclick="showSection('dashboardSection')">VOLTAR AO COMANDO</button>
+            </section>
+
+        </main>
+    </div>
+
+    <div id="missionModal" class="modal-overlay">
+        <div class="cyber-modal">
+            <div class="modal-header">
+                <h3 id="modalTitle">TÍTULO DA MISSÃO</h3>
+                <button class="close-modal" onclick="closeModal()">X</button>
+            </div>
+            <div class="modal-body" id="modalDescription">
+                </div>
+            <div class="modal-footer">
+                <button id="btnComplete" class="cyber-btn action-btn" onclick="completeMission()">CONFIRMAR EXECUÇÃO ✅</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+
+
+<!-- MODAL DE CONFIRMAÇÃO DO SISTEMA (substitui confirm) -->
+<div id="confirmModal" class="modal-overlay" style="display:none;">
+  <div class="cyber-modal">
+    <div class="modal-header">
+      <h3 id="confirmTitle">CONFIRMAÇÃO DO SISTEMA</h3>
+      <button class="close-modal" onclick="closeConfirm()">X</button>
+    </div>
+    <div class="modal-body" id="confirmMessage">Tem certeza?</div>
+    <div class="modal-footer">
+      <button class="cyber-btn danger" onclick="confirmYes()">CONFIRMAR</button>
+      <button class="cyber-btn small" onclick="closeConfirm()">CANCELAR</button>
+    </div>
+  </div>
+</div>
+
+    <!-- MODAL DE AVISO DO SISTEMA (substitui alert) -->
+    <div id="toastModal" class="modal-overlay" style="display:none;">
+      <div class="cyber-modal">
+        <div class="modal-header">
+          <h3 id="toastTitle">SISTEMA</h3>
+          <button class="close-modal" onclick="closeToast()">X</button>
+        </div>
+        <div class="modal-body" id="toastMessage">Mensagem</div>
+        <div class="modal-footer">
+          <button class="cyber-btn small" onclick="closeToast()">OK</button>
+        </div>
+      </div>
+    </div>
+
+<!-- MODAL DE CONFIRMAÇÃO DO SISTEMA -->
+<div id="confirmModal" class="modal-overlay" style="display:none;">
+  <div class="cyber-modal">
+    <div class="modal-header">
+      <h3>CONFIRMAÇÃO DO SISTEMA</h3>
+      <button class="close-modal" onclick="closeConfirm()">X</button>
+    </div>
+    <div class="modal-body" id="confirmMessage">Tem certeza?</div>
+    <div class="modal-footer">
+      <button class="cyber-btn" onclick="confirmYes()">CONFIRMAR</button>
+      <button class="cyber-btn small" onclick="closeConfirm()">CANCELAR</button>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL DE CONFIRMAÇÃO DO SISTEMA -->
+<div id="confirmModal" class="modal-overlay" style="display:none;">
+  <div class="cyber-modal">
+    <div class="modal-header">
+      <h3>CONFIRMAÇÃO DO SISTEMA</h3>
+      <button class="close-modal" onclick="closeConfirm()">X</button>
+    </div>
+    <div class="modal-body" id="confirmMessage">Tem certeza?</div>
+    <div class="modal-footer">
+      <button class="cyber-btn" onclick="confirmYes()">CONFIRMAR</button>
+      <button class="cyber-btn small" onclick="closeConfirm()">CANCELAR</button>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>

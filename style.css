@@ -1,0 +1,202 @@
+/* RESET & FONTS */
+:root {
+    --bg-dark: #0b0c15;
+    --panel-bg: #151621;
+    --neon-green: #00ff9d;
+    --neon-blue: #00d2ff;
+    --neon-purple: #bd00ff;
+    --text-main: #e0e6ed;
+    --text-dim: #7a869a;
+    --border-color: #2a2d3e;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    font-family: 'Rajdhani', sans-serif;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* LAYOUT PRINCIPAL */
+.main-interface {
+    display: flex;
+    width: 95vw;
+    height: 90vh;
+    background: var(--panel-bg);
+    border: 1px solid var(--border-color);
+    box-shadow: 0 0 20px rgba(0, 255, 157, 0.05);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 280px;
+    background: rgba(0,0,0,0.2);
+    border-right: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+}
+
+.avatar-frame {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid var(--neon-green);
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 10px var(--neon-green);
+    margin-bottom: 15px;
+}
+.avatar-frame img { width: 100%; height: 100%; object-fit: cover; }
+.scan-line {
+    position: absolute; top: 0; left: 0; width: 100%; height: 2px;
+    background: rgba(255,255,255,0.5);
+    animation: scan 2s linear infinite;
+}
+@keyframes scan { 0% {top:0;} 100% {top:100%;} }
+
+.sidebar h2 { color: var(--neon-green); font-size: 1.4rem; letter-spacing: 1px; margin-bottom: 5px; text-transform: uppercase;}
+.level-badge { background: var(--neon-purple); padding: 2px 10px; font-size: 0.9rem; border-radius: 4px; font-weight: bold; margin-bottom: 30px;}
+
+.nav-menu { width: 100%; display: flex; flex-direction: column; gap: 10px; flex: 1; }
+.nav-btn {
+    background: transparent; border: 1px solid var(--border-color); color: var(--text-dim);
+    padding: 12px; text-align: left; cursor: pointer; font-family: 'Share Tech Mono', monospace;
+    transition: all 0.3s;
+}
+.nav-btn:hover, .nav-btn.active { background: rgba(0, 255, 157, 0.1); border-color: var(--neon-green); color: var(--text-main); }
+.nav-btn.danger { color: #ff4757; border-color: #ff475755; margin-top: auto; }
+.nav-btn.danger:hover { background: rgba(255, 71, 87, 0.1); }
+
+/* XP BAR */
+.xp-container { width: 100%; margin-top: 20px; }
+.xp-bar-bg { width: 100%; height: 6px; background: #333; border-radius: 3px; margin: 5px 0; overflow: hidden; }
+.xp-bar-fill { height: 100%; background: var(--neon-purple); width: 0%; transition: width 0.5s ease; }
+.xp-text { font-size: 0.8rem; color: var(--text-dim); text-align: right; }
+
+.xp-tag, .xp-tag-project {
+    background: #333;
+    color: var(--text-main);
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.xp-tag-project {
+    background: var(--neon-purple); /* Cor para projetos/missões de alto valor */
+    color: white;
+    border: 1px solid var(--neon-purple);
+}
+
+/* MAIN CONTENT */
+.content-area { flex: 1; padding: 30px; overflow-y: auto; position: relative; }
+.panel { height: 100%; display: flex; flex-direction: column; }
+.hidden-section { display: none; }
+
+/* HEADER STATS */
+.dashboard-head { display: flex; gap: 20px; margin-bottom: 30px; }
+.stats-box {
+    flex: 1; background: rgba(0,0,0,0.3); border: 1px solid var(--border-color);
+    padding: 15px; border-radius: 5px; display: flex; flex-direction: column;
+}
+.stats-box .label { font-size: 0.8rem; color: var(--text-dim); letter-spacing: 1px; }
+.stats-box .value { font-size: 1.8rem; font-weight: bold; color: var(--text-main); font-family: 'Share Tech Mono', monospace; }
+.stats-box .value.money { color: var(--neon-green); }
+
+/* MISSIONS LIST */
+.missions-container { display: flex; flex-direction: column; gap: 20px; padding-bottom: 50px; }
+.phase-group { border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; margin-bottom: 10px; }
+.phase-header {
+    background: rgba(255,255,255,0.05); padding: 15px;
+    display: flex; justify-content: space-between; align-items: center;
+}
+.phase-header h3 { font-family: 'Share Tech Mono', monospace; color: var(--neon-blue); }
+.phase-status { font-size: 0.8rem; padding: 3px 8px; border-radius: 3px; background: #333; }
+.phase-status.locked { color: #ff4757; }
+.phase-status.unlocked { color: var(--neon-green); }
+
+.mission-item {
+    padding: 15px; border-top: 1px solid var(--border-color);
+    display: flex; justify-content: space-between; align-items: center;
+    background: rgba(0,0,0,0.1); transition: background 0.2s;
+}
+.mission-item:hover:not(.locked) { background: rgba(0, 255, 157, 0.05); cursor: pointer; }
+.mission-item.locked { opacity: 0.5; cursor: not-allowed; pointer-events: none; }
+.mission-item.completed { border-left: 4px solid var(--neon-green); }
+
+.mission-left { display: flex; align-items: center; gap: 10px; }
+.mission-icon { font-size: 1.2rem; }
+.mission-title { font-weight: 600; }
+
+/* WELCOME SCREEN */
+#welcomeSection { align-items: center; justify-content: center; text-align: center; }
+.glitch-text { font-size: 3rem; font-family: 'Share Tech Mono'; color: var(--neon-green); text-shadow: 2px 2px var(--neon-purple); margin-bottom: 20px; }
+.terminal-text { font-family: 'Share Tech Mono'; color: var(--text-dim); }
+.input-console { 
+    display: flex; align-items: center; background: black; border: 1px solid var(--neon-green); 
+    padding: 10px; width: 300px; margin: 20px 0; 
+}
+.input-console span { color: var(--neon-green); margin-right: 10px; }
+.input-console input { background: transparent; border: none; color: white; font-family: 'Share Tech Mono'; width: 100%; outline: none; }
+
+/* BUTTONS */
+.cyber-btn {
+    background: var(--neon-green); color: black; border: none; padding: 10px 25px;
+    font-family: 'Share Tech Mono'; font-weight: bold; cursor: pointer;
+    clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px);
+    transition: transform 0.1s;
+}
+.cyber-btn:hover { transform: translateY(-2px); box-shadow: 0 0 15px var(--neon-green); }
+.cyber-btn.small { padding: 8px 15px; font-size: 0.8rem; background: var(--neon-blue); }
+.cyber-btn:disabled { background: #555; cursor: not-allowed; box-shadow: none; }
+
+/* MODAL */
+.modal-overlay {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.8); display: none; justify-content: center; align-items: center; z-index: 100;
+}
+.cyber-modal {
+    background: var(--panel-bg); border: 1px solid var(--neon-blue); width: 600px; max-width: 90%;
+    box-shadow: 0 0 30px rgba(0, 210, 255, 0.2);
+}
+.modal-header {
+    background: rgba(0, 210, 255, 0.1); padding: 15px; display: flex; justify-content: space-between; align-items: center;
+    border-bottom: 1px solid var(--border-color);
+}
+.modal-header h3 { color: var(--neon-blue); font-family: 'Share Tech Mono'; }
+.close-modal { background: none; border: none; color: var(--text-dim); font-size: 1.5rem; cursor: pointer; }
+.modal-body { padding: 20px; font-size: 1rem; line-height: 1.6; color: #dcdde1; max-height: 60vh; overflow-y: auto;}
+.modal-body p { margin-bottom: 10px; }
+.modal-body ul { margin-left: 20px; margin-top: 10px; }
+.modal-body li { margin-bottom: 10px; }
+.modal-body a { color: var(--neon-green); text-decoration: none; border-bottom: 1px dashed var(--neon-green); }
+.modal-body a:hover { color: white; border-bottom-style: solid; }
+.modal-footer { padding: 15px; border-top: 1px solid var(--border-color); text-align: right; }
+
+/* SCROLLBAR CUSTOMIZADA */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: var(--bg-dark); }
+::-webkit-scrollbar-thumb { background: #333; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: var(--neon-green); }
+
+/* Botão de perigo (usado no modal de confirmação) */
+.cyber-btn.danger {
+    background: #ff4757;
+    color: white;
+}
+.cyber-btn.danger:hover { box-shadow: 0 0 15px rgba(255, 71, 87, 0.6); }
+
+/* Modal de aviso (toast em tela cheia) – mais compacto */
+#toastModal .cyber-modal { width: 520px; max-width: 92%; }
+#toastModal .modal-footer { text-align: right; }
