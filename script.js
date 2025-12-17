@@ -324,14 +324,23 @@ function initAvatar() {
 }
 
 function startSystem() {
-    const nameInput = document.getElementById('agentNameInput').value.trim();
-    if (!nameInput) {
-        openToast('Digite seu codinome para iniciar o protocolo.', 'ACESSO RESTRITO');
-        return;
-    }
-    agentData.name = nameInput;
-    saveData();
-    showSection('dashboardSection');
+  const nameInput = document.getElementById('agentNameInput').value.trim();
+  if (!nameInput) {
+    openToast('Digite seu codinome para iniciar o protocolo.', 'ACESSO RESTRITO');
+    return;
+  }
+
+  agentData.name = nameInput;
+  saveData();
+  showSection('dashboardSection');
+
+  // ✅ POPUP AO INICIAR
+  openToast(
+    `<strong>BEM-VINDO, AGENTE ${nameInput.toUpperCase()}.</strong><br><br>` +
+    `Protocolo inicializado ✅<br>` +
+    `Dica: clique em <strong>📂 ARQUIVO SECRETO</strong> para ver as regras.`,
+    "PROTOCOLO"
+  );
 }
 
 // 2. Renderização da Interface
